@@ -1,22 +1,16 @@
 package coffeeShop;
 
-public class Sweet extends Product{
-    int calories;
+public class Sweet extends Product {
+
+
+    public Sweet(int id, String name, double price, String description) {
+        super(id, name, price, description);
+
+    }
+
 
     @Override
     public String toString() {
-        return "Sweet{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +" AZN"+
-                ", description='" + description + '\'' +
-                ", total calories: " + calories +
-                '}';
-    }
-
-    public Sweet(int id, String name, String description, double price, int calories) {
-        super(id, name, description, price);
-        this.calories = calories;
-
+        return getName()+" - "+getPrice()+" Azn";
     }
 }

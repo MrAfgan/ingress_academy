@@ -1,48 +1,48 @@
 package coffeeShop;
 
 public abstract class Product {
-    protected int id;
-    protected String name;
-    protected double price;
-    protected String description;
+    private int id;
+    private String name;
+    private double price;
+    private String description;
 
 
-      Product(int id, String name, String description, double price) {
+      Product(int id, String name,double price, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
     }
 
-    int getId() {
+     public int getId() {
         return id;
     }
 
-    void setId(int id) {
+     public void setId(int id) {
         this.id = id;
     }
 
-    String getName() {
+     public String getName() {
         return name;
     }
 
-    void setName(String name) {
+     public void setName(String name) {
         this.name = name;
     }
 
-    double getPrice() {
+     public double getPrice() {
         return price;
     }
 
-    void setPrice(double price) {
+     public void setPrice(double price) {
         this.price = price;
     }
 
-    String getDescription() {
+     public String getDescription() {
         return description;
     }
 
-    void setDescription(String description) {
+     public void setDescription(String description) {
         this.description = description;
     }
 
