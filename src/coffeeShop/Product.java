@@ -7,7 +7,7 @@ public abstract class Product {
     private String description;
 
 
-      Product(int id, String name,double price, String description) {
+       Product(int id, String name,double price, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
