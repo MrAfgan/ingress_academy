@@ -28,7 +28,7 @@ public class Order {
         System.out.println(orderedProducts.toString());
         System.out.println("Yekun qiymət: "+calculateTotal()+" Azn");
     }
-    public void  cleraOrder(){
+    public void clearOrder(){
         orderedProducts.clear();
     }
 
