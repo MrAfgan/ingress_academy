@@ -8,9 +8,12 @@ public class Order {
     private List<Product>orderedProducts;
 
     public Order(int tableNumber) {
-        this.tableNumber = tableNumber;
+        this.tableNumber = this.tableNumber;
         orderedProducts=new ArrayList<>();
 
+    }
+    public boolean hasOrders(){
+        return !orderedProducts.isEmpty();
     }
     public void addProduct(Product p){
         orderedProducts.add(p);
