@@ -8,7 +8,7 @@ public class Order {
     private List<Product>orderedProducts;
 
     public Order(int tableNumber) {
-        this.tableNumber = this.tableNumber;
+        this.tableNumber = tableNumber;
         orderedProducts=new ArrayList<>();
 
     }
