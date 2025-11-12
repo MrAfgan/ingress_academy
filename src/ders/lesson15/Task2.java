@@ -23,7 +23,7 @@ public class Task2 {
 
     public static void addStock(Map<String, Product> mobileParts, String id, String name, int quantity, double price) {
         if (mobileParts.containsKey(id)) {
-            System.out.println("This: " + id + " id is already exist by Product:" + mobileParts.get(id).name + ",try bind new product to different id...");
+            System.out.println("This: " + id + " id is already exist by coffeeShop.Product:" + mobileParts.get(id).name + ",try bind new product to different id...");
         } else {
             Product p = new Product(name, quantity, price);
             mobileParts.put(id, p);
@@ -47,7 +47,7 @@ public class Task2 {
                 System.out.println("Low quantity on " + p.name + ".Quantity=" + p.quantity);
             }
         } else {
-            System.out.println("Product not found!");
+            System.out.println("coffeeShop.Product not found!");
         }
     }
 }

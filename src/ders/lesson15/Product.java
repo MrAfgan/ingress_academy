@@ -14,7 +14,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "(Product:"+ name +
+        return "(coffeeShop.Product:"+ name +
                 ", Price:" + price +"$"+
                 ", quantity:" + quantity+"-pcs)";
     }
