@@ -28,8 +28,10 @@ public class Order {
     }
     public void printOrder(){
         System.out.println("Masa "+tableNumber+" üçün sifarişlər:");
-        System.out.println(orderedProducts.toString());
-        System.out.println("Yekun qiymət: "+calculateTotal()+" Azn");
+        for (Product p : orderedProducts) {
+            System.out.println("- " + p);
+        }
+        System.out.println("Yekun qiymət: " + calculateTotal() + " Azn");
     }
     public void clearOrder(){
         orderedProducts.clear();

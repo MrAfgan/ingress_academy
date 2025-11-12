@@ -17,6 +17,11 @@ public class CoffeeShopApp {
                     3. Hesab iste
                     4. Çıxış
                     Seçiminizi daxil edin:""");
+            if (!sc.hasNextInt()) {
+                System.out.println(" Zəhmət olmasa yalnız rəqəm daxil edin!");
+                sc.next(); // səhv dəyəri atır
+                continue;  // menyuya geri qayıdır
+            }
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -24,6 +29,11 @@ public class CoffeeShopApp {
                         menu.printMenu();
                         System.out.println();
                         System.out.println("Məhsul ID-sini daxil edin,(0 - geri qayıt).");
+                        if (!sc.hasNextInt()) {
+                            System.out.println("Zəhmət olmasa yalnız rəqəm daxil edin!");
+                            sc.next();
+                            continue;
+                        }
                         int choices = sc.nextInt();
                         if (choices == 0) break;
                         Product product = menu.getProductById(choices);
@@ -43,14 +53,14 @@ public class CoffeeShopApp {
                 case 3:
                     if (!order.hasOrders()) {
                         System.out.println("Hələ sifariş etməmisiniz");
-                        }else order.printOrder();
+                    } else order.printOrder();
                     System.out.println("Tesekkur edirik");
                     order.clearOrder();
                     break;
                 case 4:
                     if (!order.hasOrders()) {
                         System.out.println("Xos getdiniz.");
-                        }
+                    }
                     return;
                 default:
                     System.out.println("Yalnis secim!");
