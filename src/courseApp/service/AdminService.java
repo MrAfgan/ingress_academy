@@ -8,7 +8,16 @@ import java.util.Scanner;
 
 public class AdminService {
     private StudentService studentService = new StudentService();
+
+    public StudentService getStudentService() {
+        return studentService;
+    }
+
     private CourseService courseService = new CourseService();
+
+    public CourseService getCourseService() {
+        return courseService;
+    }
 
     public void addStudent(Student student) {
         Scanner sc = new Scanner(System.in);
