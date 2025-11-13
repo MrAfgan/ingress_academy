@@ -38,7 +38,8 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
-    public void addCourse(Course c){
+
+    public void addCourse(Course c) {
         courses.add(c);
     }
 
@@ -47,6 +48,6 @@ public class Student {
         return
                 "Telebe: " + name +
                         " " + surname +
-                        ", Yas: " + age +"\nKurslari:" + (courses.isEmpty()?"Yoxdur":courses);
+                        ", Yas: " + age + "\nKurslari:" + (courses.isEmpty() ? "Yoxdur" : courses);
     }
 }

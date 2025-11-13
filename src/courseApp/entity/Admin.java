@@ -24,11 +24,12 @@ public class Admin {
     public void setPassword(String password) {
         this.password = password;
     }
-    public boolean login(String userName, String password){
-        if ((userName.equals("Admin")&& password.equals("1234"))){
+
+    public boolean login(String userName, String password) {
+        if ((userName.equals("Admin") && password.equals("1234"))) {
             System.out.println("Daxil oldunuz!");
             return true;
-        }else System.out.println("Yalnis loqin yaxud parol");
+        } else System.out.println("Yalnis loqin yaxud parol");
         return false;
     }
 }
