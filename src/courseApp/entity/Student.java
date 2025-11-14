@@ -7,7 +7,7 @@ public class Student {
     private String name;
     private String surname;
     private int age;
-    private List<Course> courses = new ArrayList<>();
+    private final List<Course> courses = new ArrayList<>();
 
     public Student(String name, String surname, int age) {
         this.name = name;

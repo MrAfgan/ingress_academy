@@ -6,7 +6,7 @@ import courseApp.entity.Course;
 public class CourseService {
     public void addCourse(Course c) {
         DataBase.courses.add(c);
-        System.out.println("Kurs elave olundu " + c.getName());
+        System.out.println(c.getName()+" kursu elave olundu");
     }
 
     public void listCourses() {

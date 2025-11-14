@@ -29,7 +29,7 @@ public class Admin {
         if ((userName.equals("Admin") && password.equals("1234"))) {
             System.out.println("Daxil oldunuz!");
             return true;
-        } else System.out.println("Yalnis loqin yaxud parol");
+        } else System.out.println("Yalnis loqin yaxud parol!");
         return false;
     }
 }
