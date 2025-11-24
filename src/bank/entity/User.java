@@ -1,16 +1,16 @@
 package bank.entity;
 
 public class User {
-    private String UserName;
+    private String username;
     private String password;
 
-    public User(String userName, String password) {
-        UserName = userName;
+    public User(String username, String password) {
+        this.username = username;
         this.password = password;
     }
 
-    public String getUserName() {
-        return UserName;
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {

@@ -1,9 +1,12 @@
 package bank.entity;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Operation {
     private String type;
     private double amount;
-    private String time;
+    private String time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
 
     public Operation(String type, double amount, String time) {
         this.type = type;
