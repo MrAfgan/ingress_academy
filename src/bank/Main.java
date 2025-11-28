@@ -1,6 +1,7 @@
 package bank;
 
 import bank.service.BalanceService;
+import bank.service.ConcreteBalanceService;
 import bank.service.UserService;
 
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         UserService userService = new UserService();
-        BalanceService balanceService = new BalanceService();
+        BalanceService balanceService = new ConcreteBalanceService();
 
         while (true) {
             System.out.println("Username daxil edin");
