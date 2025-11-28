@@ -66,13 +66,26 @@ public class Main {
                         int adminChoice = sc.nextInt();
 
                         switch (adminChoice) {
-                            case 1: adminService.addStudent();break;
-                            case 2: adminService.addCourse();break;
-                            case 3: adminService.assignStudentToCourse();break;
-                            case 4: adminService.getStudentService().listStudents();break;
-                            case 5: adminService.getCourseService().listCourses();break;
-                            case 6: System.out.println("Geri qayidilir!");break adminLoop;
-                            default: System.out.println("Yanlis secim!");
+                            case 1:
+                                adminService.addStudent();
+                                break;
+                            case 2:
+                                adminService.addCourse();
+                                break;
+                            case 3:
+                                adminService.assignStudentToCourse();
+                                break;
+                            case 4:
+                                adminService.getStudentService().listStudents();
+                                break;
+                            case 5:
+                                adminService.getCourseService().listCourses();
+                                break;
+                            case 6:
+                                System.out.println("Geri qayidilir!");
+                                break adminLoop;
+                            default:
+                                System.out.println("Yanlis secim!");
                         }
                     }
                     break;
@@ -92,7 +105,8 @@ public class Main {
                     }
                     break;
 
-                case 3: break outerLoopLabel;
+                case 3:
+                    break outerLoopLabel;
             }
 
         }
