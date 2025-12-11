@@ -13,6 +13,6 @@ public class Main extends Task7 {
         people.add("Oqtay");
         people.add("Kerem");
         people.add("Vidadi");
-        filter(people, minLengthSixName);
+        filter(people, longerThanFive);
     }
 }
