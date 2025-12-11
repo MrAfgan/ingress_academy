@@ -1,4 +1,4 @@
-package lesson25.task4;
+package lesson25.task13;
 
 public class Product {
     private String name;
@@ -30,8 +30,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "(" + name +
-                ", price=" + price +
-                ')';
+        return  name +
+                ", price=" + price;
     }
 }
