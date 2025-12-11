@@ -1,4 +1,7 @@
 package lesson25.task14;
 
-public class Main {
+public class Main extends Task14 {
+    public static void main(String[] args) {
+
+    }
 }
