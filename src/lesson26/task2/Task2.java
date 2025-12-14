@@ -13,6 +13,8 @@ public class Task2 {
                 "Vidadi",
                 "Nariman"
         );
-        names.stream().map(s -> s.toUpperCase()).forEach(System.out::println);
+        names.stream()
+                .map(s -> s.toUpperCase()).
+                forEach(System.out::println);
     }
 }

@@ -13,6 +13,8 @@ public class Task3 {
                 "Vidadi",
                 "Nariman"
         );
-        names.stream().filter(s->s.length()>5).forEach(System.out::println);
+        names.stream()
+                .filter(s -> s.length() > 5)
+                .forEach(System.out::println);
     }
 }
