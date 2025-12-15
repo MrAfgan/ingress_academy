@@ -5,8 +5,8 @@ import java.util.function.Predicate;
 
 public class Lesson1 {
 
-    static Predicate<String> startsWithA = s -> s.startsWith("A");
-    static Predicate<String> endsWithZ = s -> s.endsWith("z");
+    static Predicate<String> startsWithA = s -> s.toLowerCase().startsWith("a");
+    static Predicate<String> endsWithZ = s -> s.toLowerCase().endsWith("z");
     static Predicate<String> dualPredicate = startsWithA.and(endsWithZ);
 
     public static void filter(List<String> list, Predicate<String> predicate) {
