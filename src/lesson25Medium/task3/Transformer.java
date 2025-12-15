@@ -1,6 +1,6 @@
 package lesson25Medium.task3;
-
+@FunctionalInterface
 public interface Transformer {
-    void transform(String s);
+     String transformation(String s);
 
 }

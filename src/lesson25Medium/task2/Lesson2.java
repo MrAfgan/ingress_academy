@@ -11,7 +11,8 @@ public class Lesson2 {
     public static void filter(List<Integer> list, Predicate<Integer> predicate,Consumer<Integer>consumer ) {
         for (int i : list) {
             if (predicate.test(i)){
-            consumer.accept(i);}
+            consumer.accept(i);
+                System.out.println(i);}
     }
     }
 
