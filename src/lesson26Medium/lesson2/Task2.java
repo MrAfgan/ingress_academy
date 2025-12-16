@@ -14,9 +14,12 @@ public class Task2 {
 //                .stream()
 //                .sorted()
 //                .forEach(System.out::println);
-        Stream.concat(one.stream(), two.stream()).collect(Collectors.toSet())
-                .stream()
-                .sorted().
-                forEach(System.out::println);
+//        Stream.concat(one.stream(), two.stream()).collect(Collectors.toSet())
+//                .stream()
+//                .sorted().
+//                forEach(System.out::println);
+        Stream.concat(one.stream(), two.stream()).distinct()
+                .sorted()
+                .forEach(System.out::println);
     }
 }
