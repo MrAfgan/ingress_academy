@@ -10,6 +10,6 @@ public class Task6 {
                 names.stream()
                         .flatMap(n -> Arrays.stream(n.split("")))
                         .map(String::toLowerCase)
-                        .filter(s -> s.contains("a")).count());
+                        .filter(s -> s.equals("a")).count());
     }
 }
