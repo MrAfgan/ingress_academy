@@ -16,6 +16,9 @@ public class Task5 {
                 new Person("Rasim", 26),
                 new Person("Kamran", 53),
                 new Person("Igor", 33));
-        people.stream().filter(p -> p.getAge() > 30).sorted(Comparator.comparing(Person::getAge)).forEach(System.out::println);
+        people.stream()
+                .filter(p -> p.getAge() > 30)
+                .sorted(Comparator.comparing(Person::getAge))
+                .forEach(System.out::println);
     }
 }
