@@ -8,7 +8,7 @@ public class Task3 {
         List<Employee> newEmployee = new ArrayList<>();
         newEmployee.add(new Employee("Nurlan", 28, "Teacher"));
         departments.putIfAbsent("Ingress", newEmployee);
-        departments.computeIfAbsent("Ingress", _ -> new ArrayList<>()).add(new Employee("Ahad", 27, "Mentor"));
+        departments.computeIfAbsent("Ingress", k -> new ArrayList<>()).add(new Employee("Ahad", 27, "Mentor"));
         addEmployees(departments, "Ingress", "Miri", 22, "Security");
         addEmployees(departments, "Ingress", "Aga", 33, "Help Desk");
         addEmployees(departments, "Jet Academy", "Konul", 26, "SMM Manager");
