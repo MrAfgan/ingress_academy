@@ -1,13 +1,14 @@
-package lesson26Easy.task5;
+package lesson26Medium.lesson4;
 
 import java.util.List;
 
-public class Task5 {
+public class Task4 {
     public static void main(String[] args) {
         List<Integer> numbs = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        System.out.println(
-                numbs.stream()
+        numbs.stream()
                 .filter(n -> n % 2 == 0)
-                .count());
+                .mapToInt(n -> n)
+                .average()
+                .ifPresent(System.out::println);
     }
 }

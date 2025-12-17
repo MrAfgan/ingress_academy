@@ -14,7 +14,7 @@ public class Task2 {
                 "Nariman"
         );
         names.stream()
-                .map(s -> s.toUpperCase()).
-                forEach(System.out::println);
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
     }
 }
