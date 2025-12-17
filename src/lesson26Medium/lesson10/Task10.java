@@ -11,6 +11,7 @@ public class Task10 {
         names.stream()
                 .map(String::toUpperCase)
                 .filter(s -> s.contains("AB"))
-                .findAny().ifPresent(System.out::println);
+                .findAny().
+                ifPresent(System.out::println);
     }
 }
