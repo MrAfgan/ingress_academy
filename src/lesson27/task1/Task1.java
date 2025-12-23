@@ -9,11 +9,26 @@ public class Task1 {
         students.put("Murad", new ArrayList<>());
         students.put("Elvin", new ArrayList<>());
         students.put("Kamran", new ArrayList<>());
+        addScore(students, "Ali", 20);
+        addScore(students, "Ali", 15);
+        addScore(students, "Ali", 16);
+        addScore(students, "Murad", 18);
+        addScore(students, "Murad", 22);
+        addScore(students, "Murad", 15);
+        addScore(students, "Elvin", 20);
+        addScore(students, "Elvin", 16);
+        addScore(students, "Kamran", 18);
+        addScore(students, "Kamran", 10);
+        addScore(students, "Kamran", 12);
+
+        averageScore(students, "Ali");
+
+        System.out.println(highestScoreStudent(students));
 
 
     }
 
-    public static void addscore(Map<String, List<Integer>> students, String StudentName, int score) {
+    public static void addScore(Map<String, List<Integer>> students, String StudentName, int score) {
         if (students.containsKey(StudentName)) {
             students.get(StudentName)
                     .add(score);
@@ -34,15 +49,23 @@ public class Task1 {
         } else System.out.println("No such student!");
     }
 
-    public static String highestAverage(Map<String, List<Integer>> students,String StudentName) {
+    public static String highestScoreStudent(Map<String, List<Integer>> students) {
         String topStudent = null;
-        double maxAverage = 0;
-
+        double maxAverage = -1;
         for (Map.Entry<String, List<Integer>> entry : students.entrySet()) {
-            if (!students.get(StudentName).isEmpty()){
+            if (!entry.getValue().isEmpty()) {
+                double eachScore = entry.getValue()
+                        .stream()
+                        .mapToInt(Integer::intValue)
+                        .average()
+                        .orElse(0);
+                if (eachScore > maxAverage) {
+                    maxAverage = eachScore;
+                    topStudent = entry.getKey();
+                }
             }
-
-        }return topStudent;
+        }
+        return topStudent;
     }
 }
 
