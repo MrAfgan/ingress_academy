@@ -1,6 +1,6 @@
 package lesson31;
 
-public class Oreder {
+public class Order {
     private String name;
     private double price ;
     private int count;
