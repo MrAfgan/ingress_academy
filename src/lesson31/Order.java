@@ -1,16 +1,24 @@
 package lesson31;
 
 public class Order {
-    private String name;
+    private String productName;
     private double price ;
     private int count;
     private int size;
     private OrderStatus status;
     private User user;
+    private String errorMessage;
 
-    public Order(User user, String name, double price, int count, int size, OrderStatus status) {
+
+
+    public Order(User user,
+                 String productName,
+                 double price,
+                 int size,
+                 int count,
+                 OrderStatus status) {
         this.user = user;
-        this.name = name;
+        this.productName = productName;
         this.price = price;
         this.count = count;
         this.size = size;
@@ -25,12 +33,12 @@ public class Order {
         this.user = user;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public double getPrice() {
@@ -63,5 +71,12 @@ public class Order {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 }
